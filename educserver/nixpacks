@@ -1,8 +1,0 @@
-[phases.setup]
-run = "pip install -r requirements.txt"
-
-[phases.build]
-run = "python manage.py collectstatic --noinput"
-
-[phases.start]
-run = "gunicorn educserver.wsgi"
