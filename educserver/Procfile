@@ -1,1 +1,1 @@
-web: gunicorn educapp.wsgi 
+web: gunicorn educserver.wsgi 
