@@ -1,0 +1,75 @@
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{"username": "studentdummy", "password": "Ogretail65!"}
+
+###
+
+POST http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+{"email": "teacherdummy@gmail.com", "username": "teacherdummy", "password": "dummyPass123!", "isTeacher": "True"}
+
+###
+
+POST http://127.0.0.1:8000/create_class
+Content-Type: application/json
+
+{"className": "dummyClass", "sectionName": "dummySection", "teacherID": "1"}
+
+###
+
+POST http://127.0.0.1:8000/create_quiz
+Content-Type: application/json
+
+{"quizTitle": "dummyQuiz", "classroomID": "1"}
+
+###
+
+POST http://127.0.0.1:8000/join_class
+Content-Type: application/json
+
+{"classroomID": "3", "userID": "2"}
+
+###
+
+GET http://127.0.0.1:8000/classrooms/1
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/get_content/1
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/get_quiz/1
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/joined_class_list/2
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/get_questions/6
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/get_score/6
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/student_scores/6
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/test_token
+Content-Type: application/json
+Authorization:: Token c73393840bdab1c7a817fc4d02599b2ba53c88b5
+
+{}
